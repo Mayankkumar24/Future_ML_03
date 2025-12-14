@@ -38,7 +38,6 @@
     const userInput = document.getElementById('userInput');
     const sendBtn = document.getElementById('sendBtn');
 
-    // Simple session id per browser tab
     const sessionId = 'sess-' + Math.random().toString(36).substring(2,9);
 
     function appendMessage(text, cls) {
@@ -75,7 +74,6 @@
       if (e.key === "Enter") sendBtn.click();
     });
 
-    // Greeting
     appendMessage("👋 Hi! How can I help you today?", 'bot');
   </script>
 </body>
